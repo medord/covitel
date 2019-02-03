@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notokufiarabic.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notonaskharabic.css);
+
+@media (min-width: 992px)
+{
+	
+	.app .app-container .app-sidebar
+	{
+		width: 250px;
+	}
+
+	.app .app-container .app-content.app-sidebar-left
+	{
+		padding-left: 250px;
+	}
+
+}
+
+.app .app-header .app-header-search:after {
+    content: "\f002";
+    font-family: 'FontAwesome';
+}
+
+.arabicKufiFont
+{
+	font-family: 'Noto Kufi Arabic';
+}
+
+.arabicNaskhFont
+{
+	font-family: 'Noto Naskh Arabic';
+}
