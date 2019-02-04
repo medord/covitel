@@ -32,7 +32,7 @@ class DossierTribController extends Controller
         $excelFile = $request->file('dossier_file');
 
         if(isset($excelFile)){
-<<<<<<< HEAD
+
 
             $data = Excel::load($excelFile, function($reader) {
             })->get();
@@ -40,27 +40,9 @@ class DossierTribController extends Controller
             if(!empty($data) && $data->count()){
 
                 foreach ($data as $key => $value) {
-
-
                     var_dump($value);
                 }
-
-
             }
-
-
-=======
-//            $objPHPExcel = PHPExcel_IOFactory::load($excelFile);
-//            $objWorksheet = $objPHPExcel->getActiveSheet();
-//            $highestRow = $objWorksheet->getHighestRow();
-//            for ($row = 1; $row <= $highestRow; ++$row) {
-//                var_dump($objWorksheet->getCellByColumnAndRow(1, $row));
-//            }
-            $data = Excel::load($excelFile, function($reader) {
-            })->get();
-
-            return $data;
->>>>>>> origin/master
         }else{
             $adversaires = [];
             $contrats = [];
